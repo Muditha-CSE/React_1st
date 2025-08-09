@@ -28,7 +28,7 @@
 
 #logo {
   width: 150px;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   display: block;
   position: relative;
   z-index: 3;
@@ -40,7 +40,7 @@
   background-color: aliceblue;
   padding: 10px;
   font-size: 1.2em;
-  margin: 15% 10%;
+  margin: 10% 10%;
   border: 2px solid black;
   border-radius: 2%;
 }
