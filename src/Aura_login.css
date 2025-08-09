@@ -1,38 +1,59 @@
-.logincnt{
-    background-color: rgb(243, 246, 242);
-    width: 450px;
-    height: 350px;
-    border-radius: 5%; 
-    transition: opacity 1s ease-in-out;   
+/* Gradient backgrounds behind everything */
+.gradientBg {
+  position: fixed;
+  inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0; */
+  transition: opacity 2s ease;
+  pointer-events: none; /* so it doesn't block clicks */
+  z-index: -1;
 }
-.logincnt.fade-out {
-  opacity: 0;
+
+/* Login container and its background images */
+.logincnt {
+  position: relative;
+  width: 450px;
+  height: 350px;
+  border-radius: 5%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-input{
-    width: 250px;
+
+/* Background image layers */
+.bgImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.5s ease;
 }
-.login{
-    background-color: aliceblue;
-    padding: 10px 10px;
-    font-size: 1.2em;
-    margin: 7% 19%;
-    border: 2px solid black;
-    border-radius: 2%;
+
+#logo {
+  width: 150px;
+  margin: 20px auto 0;
+  display: block;
+  position: relative;
+  z-index: 3;
 }
-.inputs{
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding :2.5px 2.5px;
+
+.login {
+  position: relative;
+  z-index: 3;
+  background-color: aliceblue;
+  padding: 10px;
+  font-size: 1.2em;
+  margin: 15% 10%;
+  border: 2px solid black;
+  border-radius: 2%;
 }
-#button_new{
-    margin-top: 5px;
-    font-size: 1.06em;
-    padding: 3px 8px;
+
+.inputs {
+  width: 100%;
+  max-width: 250px;
+  margin: 5px 0 15px;
+  padding: 5px;
+  box-sizing: border-box;
 }
-#logo{
-    width: 200px;
-    padding-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+#button_new {
+  font-size: 1.06em;
+  padding: 3px 8px;
 }
