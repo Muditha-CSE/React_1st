@@ -138,7 +138,7 @@ label {
     padding: 10px;
     box-sizing: border-box;
     min-height: 100vh;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 5vh;
   }
 
@@ -168,7 +168,7 @@ label {
 @media screen and (max-width: 480px) {
   .app {
     padding: 5px;
-    padding-top: 2vh;
+    align-items: center;
   }
 
   .logincnt {
