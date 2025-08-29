@@ -119,7 +119,7 @@ function Aura_sign() {
           <br />
 
           <button type="button" className="button_new" onClick={submitbut}>
-            Sign IN
+            Sign UP
           </button>
           <button type="button" className="button_new" onClick={back_to_main}>
             Go back
