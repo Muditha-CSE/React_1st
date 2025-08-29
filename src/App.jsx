@@ -5,15 +5,17 @@ import Aura_sign from './Aura_signin/Aura_sign'; // your register page
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* Login page */}
-        <Route path="/" element={<Aura_login />} />
+    <BrowserRouter basename="/React_1st">
+      <Router>
+        <Routes>
+          {/* Login page */}
+          <Route path="/" element={<Aura_login />} />
 
-        {/* Register page */}
-        <Route path="/register" element={<Aura_sign />} />
-      </Routes>
-    </Router>
+          {/* Register page */}
+          <Route path="/register" element={<Aura_sign />} />
+        </Routes>
+      </Router>
+    </BrowserRouter>
   );
 }
 
